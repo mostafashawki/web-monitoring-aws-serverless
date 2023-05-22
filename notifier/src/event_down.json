@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:eu-central-1:00000:monitoring_sns:917baeae-7476-43e6-b3dc-f1cb8d57f0b7",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "b05691a4-81c6-58dd-9459-cd400064bfe9",
+                "TopicArn": "arn:aws:sns:eu-central-1:00000:monitoring_sns",
+                "Subject": null,
+                "Message": "{\"timestamp\":\"2023-05-21T20:30:21.394Z\",\"responseDuration\":445,\"successful\":false}",
+                "Timestamp": "2023-05-21T20:30:26.054Z",
+                "SignatureVersion": "1",
+                "Signature": "Ap6Vy/N85D9QNb2qDjXgTc1mOCfWtGa2+GvRt/Z7z9kSjcF4NSQh9FFrLZW3EfMKLPS8EUMViLF1I51jPQ3Y1AjchtF+qos2+Mb+6OiIh+WMqh8B4WPd4RzvL8MZeorI78v8UOx0pxQOrSpos/fbNwt3/1k9ecFHq3BGcM7fo7tSHa9MKCoNpK/SpmjAFD1+OZ+YMzck4lHhIOiPZH7Khj7ULEBcsQK5Mpdmgvq7j8r2a+dQ7vBR0Mx5k4lj9f50ZbJtZ5k42gh0SrZhYZCXj1M7y+1MDwKyqmFPHgg/OOeyrlHSnsVKdZvpnZ7YyhZvp/UEYFsj4bzKpvKgv24IJA==",
+                "SigningCertUrl": "https://sns.eu-central-1.amazonaws.com/SimpleNotificationService-000000.pem",
+                "UnsubscribeUrl": "https://sns.eu-central-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-central-1:00000:monitoring_sns:917baeae-7476-43e6-b3dc-f1cb8d57f0b7",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}

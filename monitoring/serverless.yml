@@ -1,0 +1,19 @@
+service: monitoring
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-central-1
+  stage: dev
+
+  environment:
+    SNS_ARN: ${file(./config.${opt:stage, 'dev'}.json):SNS_ARN}
+    URL_TO_CHECK: ${file(./config.${opt:stage, 'dev'}.json):URL_TO_CHECK}
+
+functions:
+  monitor:
+    handler: index.run
+    events:
+      # Invoke Lambda function every 1 minute
+      - schedule: rate(1 minute)

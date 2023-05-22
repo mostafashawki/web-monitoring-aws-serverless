@@ -1,0 +1,10 @@
+service: notifier
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  notify:
+    handler: src/index.handler

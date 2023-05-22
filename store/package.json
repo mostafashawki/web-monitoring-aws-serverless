@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "api": "sls offline",
+    "event": "sls invoke local -f save -p src/events.json"
+  },
+  "devDependencies": {
+    "serverless-offline": "^12.0.4"
+  }
+}

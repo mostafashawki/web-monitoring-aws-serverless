@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "event:up": "sls invoke local -f notify -p src/event_up.json",
+    "event:down": "sls invoke local -f notify -p src/event_down.json"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.2"
+  }
+}
